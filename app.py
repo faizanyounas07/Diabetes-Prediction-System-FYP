@@ -180,7 +180,7 @@ elif page == "🤖 Train & Evaluate Models":
 
             best_name = metrics.iloc[0]['Model']
             save_model(trained[best_name], scaler,
-                       path="/home/claude/diabetes_prediction/models/best_model.pkl")
+                 path="models/best_model.pkl")
 
             st.session_state.update({
                 'trained': trained, 'metrics': metrics, 'scaler': scaler,
